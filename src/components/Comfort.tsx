@@ -45,7 +45,7 @@ const Comfort = () => {
         "https://pics.porsche.com/rtt/iris?COSY-EU-100-1713c6eK12UC31P3T5JOCU%25hjdmiTDDmvMXlHWguCuq6Q44RtRHo9ZAaDjYu5P3I7tGW3rNbZJNKXv9Z7KcQQ%25yFN5tFAsXrw4r3wo0qnqZr8MCnR4i84tV2YN2OmNyW1QGWgCWKMUuyO8kV60KwwhQ5kHlgfNc0M0DydMAT89re4ikIu8tBCr60lZouhmqSv6gyYY4W0ByP3avIynw1Wt8Eeqtw3UiscWwABWnJelZataRHS1fVV2Yq80mcPITvbd3M85kMsIPBuLs76vShQXDPTDdyZM23wwAkdLCPzNdepXHa",
     },
     {
-      videoURL: "./ending.mp4",
+      videoURL: "./assets/ending.mp4",
       title: "Porsche",
       thumbnail:
         "https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2023/Products/911-S-T/Titel.jpg/jcr:content/Titel.jpg",

@@ -7,7 +7,7 @@ const Process = () => {
         </div>
         <div className="process-content">
           <div className="process-box">
-            <img src="/assets/svg/car1.svg" alt="" />
+            <img src="./assets/svg/car1.svg" alt="" />
             <div className="process-text">
               <h3>Dream car</h3>
               <p>
@@ -26,7 +26,7 @@ const Process = () => {
             <path d="M1 0V235" stroke="#E5E5E5" />
           </svg>
           <div className="process-box">
-            <img src="/assets/svg/car2.svg" alt="" />
+            <img src="./assets/svg/car2.svg" alt="" />
             <div className="process-text">
               <h3>Order a car</h3>
               <p>
@@ -45,7 +45,7 @@ const Process = () => {
             <path d="M1 0V235" stroke="#E5E5E5" />
           </svg>
           <div className="process-box">
-            <img src="/assets/svg/car3.svg" alt="" />
+            <img src="./assets/svg/car3.svg" alt="" />
             <div className="process-text">
               <h3>Car delivery</h3>
               <p>
@@ -64,7 +64,7 @@ const Process = () => {
             <path d="M1 0V235" stroke="#E5E5E5" />
           </svg>
           <div className="process-box">
-            <img src="/assets/svg/car1.svg" alt="" />
+            <img src="./assets/svg/car1.svg" alt="" />
             <div className="process-text">
               <h3>Receiving a car</h3>
               <p>

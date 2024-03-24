@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <Link to="/">
+            <Link to="/react-porsche/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
@@ -260,7 +260,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-responsive">
-          <Link to="/">
+          <Link to="/react-porsche/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="45"

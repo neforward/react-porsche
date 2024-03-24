@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <Link to="/">
+        <Link to="/react-porsche/">
           <svg
-          className="responsive-logo"
+            className="responsive-logo"
             xmlns="http://www.w3.org/2000/svg"
             width="45"
             height="45"
@@ -195,7 +195,7 @@ const Header = () => {
         </Link>
         <div className="header-content">
           <nav className="header-nav">
-            <Link to="/">
+            <Link to="/react-porsche/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"

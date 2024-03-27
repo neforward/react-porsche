@@ -213,9 +213,6 @@ const Configurator = () => {
         "https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXABuN9dMGF4tl3U5Yz8rMH1spbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmWBisGK7Zlp0KtYYF%25mVSW8uVBrIuGbmukN3er0gexTjzwHlznVaqxKpqNtmO1SZ5CMNYw32Mx7e2HaWp1UzQK9OWbsqYS3Ew0iO5MP4hHcn7woMlG7ElPczJNT1BSCbWfDsTFoik7J",
     },
   };
- 
-
-  
   return (
     <>
       <HeaderBlack />

@@ -13,11 +13,11 @@ function App() {
       <main>
         <Routes>
           <Route path="/react-porsche/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/terms-and-condition" element={<TermsAndCondition />} />
-          <Route path="/configurator" element={<Configurator />} />
-          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/react-porsche/contact" element={<Contact />} />
+          <Route path="/react-porsche/about" element={<About />} />
+          <Route path="/react-porsche/terms-and-condition" element={<TermsAndCondition />} />
+          <Route path="/react-porsche/configurator" element={<Configurator />} />
+          <Route path="/react-porsche/catalog" element={<Catalog />} />
         </Routes>
       </main>
     </>

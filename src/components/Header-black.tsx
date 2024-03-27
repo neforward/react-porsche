@@ -7,7 +7,6 @@ const HeaderBlack = () => {
     <>
       <header className="header-black">
         <div className="container">
-
             <Link to="/react-porsche/">
               <svg
                 className="responsive-logo"
@@ -29,7 +28,7 @@ const HeaderBlack = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="45"
                   height="45"
-                  
+
                   viewBox="0 0 192.756 192.756"
                 >
                   <g fillRule="evenodd" clipRule="evenodd">
@@ -37,10 +36,10 @@ const HeaderBlack = () => {
                   </g>
                 </svg>
               </Link>
-              <Link to="/configurator">Configurator</Link>
-              <Link to="/about">About</Link>
-              <Link to="/catalog">Cars in stock</Link>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/react-porsche/configurator">Configurator</Link>
+              <Link to="/react-porsche/about">About</Link>
+              <Link to="/react-porsche/catalog">Cars in stock</Link>
+              <Link to="/react-porsche/contact">Contact Us</Link>
             </nav>
             <div className="header-black-phone-number">
               <h3>+1(888) 369-9904</h3>
@@ -57,10 +56,10 @@ const HeaderBlack = () => {
             <div className={isShow ? "menu overlay" : "menu"}>
               <div className="burger-black-container">
                 <nav className="burger-black-nav">
-                  <Link to="/configurator">Configurator</Link>
-                  <Link to="/about">About</Link>
-                  <Link to="/catalog">Cars in stock</Link>
-                  <Link to="/contact">Contact Us</Link>
+                  <Link to="/react-porsche/configurator">Configurator</Link>
+                  <Link to="/react-porsche/about">About</Link>
+                  <Link to="/react-porsche/catalog">Cars in stock</Link>
+                  <Link to="/react-porsche/contact">Contact Us</Link>
                 </nav>
                 <div className="menu-line"></div>
                 <div className="burger-black-phone-number">

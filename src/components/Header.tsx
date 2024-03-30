@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <Link to="/react-porsche/">
+        <Link to="/">
           <svg
             className="responsive-logo"
             xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +195,7 @@ const Header = () => {
         </Link>
         <div className="header-content">
           <nav className="header-nav">
-            <Link to="/react-porsche/">
+            <Link to="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
@@ -380,10 +380,10 @@ const Header = () => {
                 />
               </svg>
             </Link>
-            <Link to="/react-porsche/configurator">Configurator</Link>
-            <Link to="/react-porsche/about">About</Link>
-            <Link to="/react-porsche/catalog">Cars in stock</Link>
-            <Link to="/react-porsche/contact">Contact Us</Link>
+            <Link to="/configurator">Configurator</Link>
+            <Link to="/about">About</Link>
+            <Link to="/catalog">Cars in stock</Link>
+            <Link to="/contact">Contact Us</Link>
           </nav>
           <div className="header-phone-number">
             <h3>+1(888) 369-9904</h3>
@@ -399,10 +399,10 @@ const Header = () => {
           <div className={isShow ? "menu overlay" : "menu"}>
             <div className="burger-container">
               <nav className="burger-nav">
-                <Link to="/react-porsche/configurator">Configurator</Link>
-                <Link to="/react-porsche/about">About</Link>
-                <Link to="/react-porsche/catalog">Cars in stock</Link>
-                <Link to="/react-porsche/contact">Contact Us</Link>
+                <Link to="/configurator">Configurator</Link>
+                <Link to="/about">About</Link>
+                <Link to="/catalog">Cars in stock</Link>
+                <Link to="/contact">Contact Us</Link>
               </nav>
               <div className="menu-line"></div>
               <div className="burger-phone-number">

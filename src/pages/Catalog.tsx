@@ -28,7 +28,7 @@ const Catalog = () => {
     },
     {
       imgURL:
-        "https://platform.cstatic-images.com/xlarge/in/v2/bc1c122d-222c-5c69-b2d1-fa5181b31727/f9da90f0-8884-4795-9552-ef481ac84826/EyWfmBDefbXguYs8oh_-OTWANlg.jpg",
+        "https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/9004500a220bf3a3d455d15ee052cf8c332606f8/photos/3gq6xaNP-5Zzhy1THp9-(edit).jpg?t=165820835234",
       type: "Gasoline",
       model: "Porsche 911 Turbo S",
       price: "159,990",

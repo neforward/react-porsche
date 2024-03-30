@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <Link to="/react-porsche/">
+            <Link to="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
@@ -193,10 +193,10 @@ const Footer = () => {
             </Link>
           </div>
           <nav className="footer-nav">
-            <Link to="/react-porsche/configurator">Configurator</Link>
-            <Link to="/react-porsche/about">About</Link>
-            <Link to="/react-porsche/catalog">Cars in stock</Link>
-            <Link to="/react-porsche/contact">Contact Us</Link>
+            <Link to="/configurator">Configurator</Link>
+            <Link to="/about">About</Link>
+            <Link to="/catalog">Cars in stock</Link>
+            <Link to="/contact">Contact Us</Link>
           </nav>
           <div className="footer-icons">
           <a href="https://www.instagram.com/neforward/" target="_blank">
@@ -260,7 +260,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-responsive">
-          <Link to="/react-porsche/">
+          <Link to="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="45"
@@ -447,10 +447,10 @@ const Footer = () => {
           </Link>
           <div className="footer-responsive-nav">
             <nav>
-              <Link to="/react-porsche/configurator">Configurator</Link>
-              <Link to="/react-porsche/about">About</Link>
-              <Link to="/react-porsche/catalog">Cars in stock</Link>
-              <Link to="/react-porsche/contact">Contact Us</Link>
+              <Link to="/configurator">Configurator</Link>
+              <Link to="/about">About</Link>
+              <Link to="/catalog">Cars in stock</Link>
+              <Link to="/contact">Contact Us</Link>
             </nav>
           </div>
           <svg

@@ -8,6 +8,7 @@ const Hero = () => {
         loop
         muted
         plays-inline="true"
+        controls={false}
         className="background-video"
       >
         <source

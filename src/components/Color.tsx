@@ -151,8 +151,8 @@ const Color = () => {
           <div className="color-text">
             <h3>Select your color</h3>
             <p>
-              Minimalist design. Powerful performance. Porsche 911 brings the driving
-              experience into the post-petrol era.
+              Minimalist design. Powerful performance. Porsche 911 brings the
+              driving experience into the post-petrol era.
             </p>
           </div>
           <Swiper
@@ -182,7 +182,6 @@ const Color = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-
 
           <div className="color-navigation">
             <nav className="color-nav">

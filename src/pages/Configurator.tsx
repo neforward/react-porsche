@@ -213,7 +213,7 @@ const Configurator = () => {
         "https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXABuN9dMGF4tl3U5Yz8rMH1spbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmWBisGK7Zlp0KtYYF%25mVSW8uVBrIuGbmukN3er0gexTjzwHlznVaqxKpqNtmO1SZ5CMNYw32Mx7e2HaWp1UzQK9OWbsqYS3Ew0iO5MP4hHcn7woMlG7ElPczJNT1BSCbWfDsTFoik7J",
     },
   };
-  
+
   return (
     <>
       <HeaderBlack />
@@ -222,7 +222,7 @@ const Configurator = () => {
           <div className="main-content">
             <div className="main-top">
               <h2>Configurator Porsche 911</h2>
-              <button>Характеристики авто</button>
+              <button>Car characteristics</button>
             </div>
             <div className="main-car">
               <div className="main-car-content">
@@ -399,7 +399,7 @@ const Configurator = () => {
                         </div>
                         <div className="des">
                           <p>
-                            Чёрно-белый <span>+0 CNY</span>
+                            Black and white <span>+0 CNY</span>
                           </p>
                         </div>
                       </div>
@@ -506,7 +506,7 @@ const Configurator = () => {
                     <h4>19 000 CNY</h4>
                   </div>
                   <div className="payment-row">
-                    <h5>Таможня</h5>
+                    <h5>Customs</h5>
                     <h4>18 000 $</h4>
                   </div>
                   <div className="payment-row">
@@ -524,9 +524,9 @@ const Configurator = () => {
                 </div>
                 <div className="main-sum-total">
                   <div className="total-sum">
-                    <h6>Итого</h6>
+                    <h6>Total</h6>
                     <h2>15 776 331 $</h2>
-                    <p>Включая 1 500$ — комиссию Berg Group</p>
+                    <p>Including $1,500 NEFORWARD commission</p>
                   </div>
                 </div>
                 <div className="main-sum-currency-changer">
@@ -539,12 +539,12 @@ const Configurator = () => {
                 </div>
                 <div className="main-sum-des">
                   <p>
-                    Цена в рублях рассчитана по текущему курсу и может
-                    отличаться в момент заказа.
+                    The price in USDs is calculated at the current exchange rate
+                    and may vary at the time of order.
                   </p>
                 </div>
                 <div className="main-sum-green-btn">
-                  <button>Оставить заявку</button>
+                  <button>Submit your application</button>
                 </div>
               </div>
             </div>

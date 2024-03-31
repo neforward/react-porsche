@@ -51,7 +51,7 @@ const Comfort = () => {
         "https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2023/Products/911-S-T/Titel.jpg/jcr:content/Titel.jpg",
     },
   ];
-  
+
   const handleClick = (i: number) => {
     const video = player.current[i];
     if (video?.paused) {

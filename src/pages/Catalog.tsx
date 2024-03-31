@@ -106,7 +106,7 @@ const Catalog = () => {
                     <h3>{car.year}</h3>
                   </div>
                   <div className="info-btn">
-                    <button>Подробнее</button>
+                    <button>More Details</button>
                   </div>
                 </div>
               </div>

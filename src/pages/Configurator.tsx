@@ -25,10 +25,38 @@ interface IColors {
   [key: string]: IColor;
 }
 
+interface IColorPrices {
+  white: number;
+  silver: number;
+  grey: number;
+  black: number;
+  pink: number;
+  darkblue: number;
+  lightblue: number;
+  yellow: number;
+  red: number;
+}
+interface IColorPrices {
+  [key: string]: number;
+}
 const Configurator = () => {
-  const [selectedColor, setSelectedColor] = useState("white");
+  const [selectedColor, setSelectedColor] = useState<string>("white");
+  const [totalPrice, setTotalPrice] = useState<number>(
+    15000000 + 826480 + 792480 + 19000 + 18000 + 1500 + 1500 + 1100
+  );
+  const [, setActiveSlide] = useState<number>(0);
 
-  const [, setActiveSlide] = useState(0);
+  const colorPrices: IColorPrices = {
+    white: 0,
+    silver: 5000,
+    grey: 7000,
+    black: 10000,
+    pink: 8000,
+    darkblue: 6000,
+    lightblue: 5500,
+    yellow: 6500,
+    red: 9000,
+  };
 
   const handleColorClick = (
     color: SetStateAction<string>,
@@ -36,6 +64,8 @@ const Configurator = () => {
   ) => {
     setSelectedColor(color);
     setActiveSlide(slideIndex);
+    // @ts-ignore
+    setTotalPrice(totalPrice + colorPrices[color]);
   };
 
   const colors: IColors = {
@@ -262,35 +292,6 @@ const Configurator = () => {
                   </Swiper>
                 </div>
                 <div className="main-customization">
-                  <div className="select-customization">
-                    <div className="main-customization-car">
-                      <h2>Model</h2>
-                      <select name="" id="">
-                        <option value="718">718</option>
-                        <option value="911">911</option>
-                        <option value="Taycan">Taycan</option>
-                        <option value="Panamera">Panamera</option>
-                        <option value="Macan">Macan</option>
-                        <option value="Cayenne">Cayenne</option>
-                      </select>
-                    </div>
-                    <div className="main-customization-car">
-                      <h2>SubType</h2>
-                      <select name="" id="">
-                        <option value="">Eletre</option>
-                        <option value="">Eletre</option>
-                        <option value="">Eletre</option>
-                      </select>
-                    </div>
-                    <div className="main-customization-car">
-                      <h2>Complectation</h2>
-                      <select>
-                        <option value="">S+</option>
-                        <option value="">S+</option>
-                        <option value="">S+</option>
-                      </select>
-                    </div>
-                  </div>
                   <div className="color-customization">
                     <div className="car-body-color">
                       <h2>Car's body color</h2>
@@ -359,86 +360,45 @@ const Configurator = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="car-salon-color">
-                      <div className="car-salon-color">
-                        <h2>Interior color (Ain't Working)</h2>
-                        <div className="colors">
-                          <div className="first-color">
-                            <img src="./assets/svgs/colors/double.svg" alt="" />
-                          </div>
-                          <div className="second-color">
-                            <img
-                              src="./assets/svgs/colors/double2.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="third-color">
-                            <img
-                              src="./assets/svgs/colors/double3.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="fourth-color">
-                            <img
-                              src="./assets/svgs/colors/double4.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="fifth-color">
-                            <img
-                              src="./assets/svgs/colors/double5.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div className="sixth-color">
-                            <img
-                              src="./assets/svgs/colors/double6.svg"
-                              alt=""
-                            />
-                          </div>
+                    <div className="wheel-customization">
+                      <div className="wheels-types">
+                        <h2>Wheels (Ain't Working)</h2>
+                        <div className="wheels">
+                          <img
+                            src="https://configurator.porsche.com/assets/2024/992110/studio_46H.jpg"
+                            alt=""
+                          />
+                          <img
+                            src="https://configurator.porsche.com/assets/2024/992110/studio_46K.jpg"
+                            alt=""
+                          />
+                          <img
+                            src="https://configurator.porsche.com/assets/2024/992110/studio_46L.jpg"
+                            alt=""
+                          />
+                          <img
+                            src="https://configurator.porsche.com/assets/2024/992110/studio_46I.jpg"
+                            alt=""
+                          />
+                          <img
+                            src="https://configurator.porsche.com/assets/2024/992110/studio_46M.jpg"
+                            alt=""
+                          />
+                          <img
+                            src="https://configurator.porsche.com/assets/2024/992110/studio_46J.jpg"
+                            alt=""
+                          />
                         </div>
                         <div className="des">
                           <p>
-                            Black and white <span>+0 CNY</span>
+                            20" Black Wheels <span>+0 CNY</span>
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="wheel-customization">
-                    <div className="wheels-types">
-                      <h2>Wheels</h2>
-                      <div className="wheels">
-                        <img src="./assets/svgs/wheels/wheel.svg" alt="" />
-                        <img src="./assets/svgs/wheels/wheel2.svg" alt="" />
-                        <img src="./assets/svgs/wheels/wheel3.svg" alt="" />
-                        <img src="./assets/svgs/wheels/wheel4.svg" alt="" />
-                      </div>
-                      <div className="des">
-                        <p>
-                          20" Black Wheels <span>+0 CNY</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="booster-types">
-                      <h2>Caliper color</h2>
-                      <div className="boosters">
-                        <img src="./assets/svgs/wheels/booster.svg" alt="" />
-                        <img src="./assets/svgs/wheels/booster2.svg" alt="" />
-                        <img src="./assets/svgs/wheels/booster3.svg" alt="" />
-                        <img src="./assets/svgs/wheels/booster4.svg" alt="" />
-                        <img src="./assets/svgs/wheels/booster5.svg" alt="" />
-                      </div>
-                      <div className="des">
-                        <p>
-                          <span>+0 $</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                   <div className="optional-options">
                     <h3>Additional options</h3>
-
                     <div className="option">
                       <input type="checkbox" />
                       <h4>
@@ -495,15 +455,15 @@ const Configurator = () => {
                 <div className="additional-payment">
                   <div className="payment-row">
                     <h5>Invoice</h5>
-                    <h4>826 480 CNY</h4>
+                    <h4>826 480 $</h4>
                   </div>
                   <div className="payment-row">
                     <h5>Price of a car in Germany with documents</h5>
-                    <h4>792 480 CNY</h4>
+                    <h4>792 480 $</h4>
                   </div>
                   <div className="payment-row">
                     <h5>Delivery to NYC</h5>
-                    <h4>19 000 CNY</h4>
+                    <h4>19 000 $</h4>
                   </div>
                   <div className="payment-row">
                     <h5>Customs</h5>
@@ -525,17 +485,22 @@ const Configurator = () => {
                 <div className="main-sum-total">
                   <div className="total-sum">
                     <h6>Total</h6>
-                    <h2>15 776 331 $</h2>
+                    <h2>
+                      {(totalPrice + 15000).toLocaleString("en-US", {
+                        minimumFractionDigits: 0,
+                      })}{" "}
+                      $
+                    </h2>
                     <p>Including $1,500 NEFORWARD commission</p>
                   </div>
                 </div>
                 <div className="main-sum-currency-changer">
                   <div className="main-sum-currency-changer-btns">
-                    <button>RUB</button>
-                    <button>CNY</button>
-                    <button>USD</button>
+                    {["EU", "CNY", "USD"].map((currency, index) => (
+                      <button key={index}>{currency}</button>
+                    ))}
                   </div>
-                  <p>CNY = 12.58₽ • USD = 89.69₽, 1/9/2024</p>
+                  <p>CNY = 12.58 • USD = 89.69 1/9/2024</p>
                 </div>
                 <div className="main-sum-des">
                   <p>
@@ -583,7 +548,6 @@ const Configurator = () => {
         <h2>Multimedia Of Porsche 911</h2>
         <h3>1323 | 443 | 4.5 | 3.0</h3>
       </div>
-
       <div className="bg-four">
         <h2>Multimedia Of Porsche 911</h2>
         <h3>1323 | 443 | 4.5 | 3.0</h3>

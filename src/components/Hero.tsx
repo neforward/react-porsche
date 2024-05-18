@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
 const Hero = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <section className="hero">
       <video
@@ -24,12 +27,12 @@ const Hero = () => {
         </div>
         <div className="hero-btns">
           <div>
-            <Link to="/configurator">
+            <Link to="/configurator" onClick={scrollToTop}>
               <button>Configurator</button>
             </Link>
           </div>
           <div>
-            <Link to="/catalog">
+            <Link to="/catalog" onClick={scrollToTop}>
               <button>Cars in stock</button>
             </Link>
           </div>

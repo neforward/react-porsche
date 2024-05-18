@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 const HeaderBlack = () => {
   const [isShow, setIsShow] = useState<boolean>(false);
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <header className="header-black">
         <div className="container">
-          <Link to="/">
+          <Link to="/" onClick={scrollToTop}>
             <svg
               className="responsive-logo"
               xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +26,9 @@ const HeaderBlack = () => {
 
           <div className="header-black-content">
             <nav className="header-black-nav">
-              <Link to="/">
+              <Link to="/"  onClick={scrollToTop}>
                 <svg
+                 
                   xmlns="http://www.w3.org/2000/svg"
                   width="45"
                   height="45"
@@ -35,10 +39,18 @@ const HeaderBlack = () => {
                   </g>
                 </svg>
               </Link>
-              <Link to="/configurator">Configurator</Link>
-              <Link to="/about">About</Link>
-              <Link to="/catalog">Cars in stock</Link>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/configurator" onClick={scrollToTop}>
+                Configurator
+              </Link>
+              <Link to="/about" onClick={scrollToTop}>
+                About
+              </Link>
+              <Link to="/catalog" onClick={scrollToTop}>
+                Cars in stock
+              </Link>
+              <Link to="/contact" onClick={scrollToTop}>
+                Contact Us
+              </Link>
             </nav>
             <div className="header-black-phone-number">
               <h3>+1(888) 369-9904</h3>
@@ -55,10 +67,18 @@ const HeaderBlack = () => {
             <div className={isShow ? "menu overlay" : "menu"}>
               <div className="burger-black-container">
                 <nav className="burger-black-nav">
-                  <Link to="/configurator">Configurator</Link>
-                  <Link to="/about">About</Link>
-                  <Link to="/catalog">Cars in stock</Link>
-                  <Link to="/contact">Contact Us</Link>
+                  <Link to="/configurator" onClick={scrollToTop}>
+                    Configurator
+                  </Link>
+                  <Link to="/about" onClick={scrollToTop}>
+                    About
+                  </Link>
+                  <Link to="/catalog" onClick={scrollToTop}>
+                    Cars in stock
+                  </Link>
+                  <Link to="/contact" onClick={scrollToTop}>
+                    Contact Us
+                  </Link>
                 </nav>
                 <div className="menu-line"></div>
                 <div className="burger-black-phone-number">

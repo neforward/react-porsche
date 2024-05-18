@@ -8,6 +8,7 @@ interface IMainCatalog {
   price: string;
   year: number;
 }
+
 const Catalog = () => {
   const mainCatalog: IMainCatalog[] = [
     {
@@ -37,7 +38,7 @@ const Catalog = () => {
 
     {
       imgURL:
-        "https://platform.cstatic-images.com/xlarge/in/v2/5f7d0bfa-cf8e-5d51-8821-386db4420eba/efaf3c59-846c-40f5-a2a2-18627464094d/WPBzZZR3WnDwnSXCxhoNe4H_iSY.jpg",
+        "https://cdn.elferspot.com/wp-content/uploads/2024/05/14/a7404945-scaled-1.jpg?class=xl",
       type: "Gasoline",
       model: "Porsche 911 Turbo S",
       price: "123,997",
@@ -76,7 +77,9 @@ const Catalog = () => {
       year: 2023,
     },
   ];
-
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <HeaderBlack />
@@ -84,7 +87,7 @@ const Catalog = () => {
         <div className="container">
           <div className="carsInStock-title">
             <h2>Cars in stock</h2>
-            <Link to="/configurator">
+            <Link to="/configurator" onClick={scrollToTop}>
               <button>Configurator</button>
             </Link>
           </div>

@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <Link to="/">
+            <Link to="/" onClick={scrollToTop}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
@@ -193,10 +196,10 @@ const Footer = () => {
             </Link>
           </div>
           <nav className="footer-nav">
-            <Link to="/configurator">Configurator</Link>
-            <Link to="/about">About</Link>
-            <Link to="/catalog">Cars in stock</Link>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/configurator" onClick={scrollToTop}>Configurator</Link>
+            <Link to="/about" onClick={scrollToTop}>About</Link>
+            <Link to="/catalog" onClick={scrollToTop}>Cars in stock</Link>
+            <Link to="/contact" onClick={scrollToTop}>Contact Us</Link>
           </nav>
           <div className="footer-icons">
             <a href="https://www.instagram.com/neforward/" target="_blank">
@@ -255,12 +258,12 @@ const Footer = () => {
         </div>
         <div className="footer-bottom">
           <p>Design Studio “NEFORWARD” © 2024 All rights reserved.</p>
-          <Link to="/terms-and-condition">
+          <Link to="/terms-and-condition" onClick={scrollToTop}>
             <span>Privacy Policy</span>
           </Link>
         </div>
         <div className="footer-responsive">
-          <Link to="/">
+          <Link to="/" onClick={scrollToTop}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="45"
@@ -447,10 +450,10 @@ const Footer = () => {
           </Link>
           <div className="footer-responsive-nav">
             <nav>
-              <Link to="/configurator">Configurator</Link>
-              <Link to="/about">About</Link>
-              <Link to="/catalog">Cars in stock</Link>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/configurator" onClick={scrollToTop}>Configurator</Link>
+              <Link to="/about" onClick={scrollToTop}>About</Link>
+              <Link to="/catalog" onClick={scrollToTop}>Cars in stock</Link>
+              <Link to="/contact" onClick={scrollToTop}>Contact Us</Link>
             </nav>
           </div>
           <svg
@@ -463,7 +466,7 @@ const Footer = () => {
             <line opacity="0.1" y1="0.5" x2="343" y2="0.5" stroke="grey" />
           </svg>
           <div className="footer-responsive-credit">
-            <Link to="/terms-and-condition">
+            <Link to="/terms-and-condition" onClick={scrollToTop}>
               <h6>Privacy Policy</h6>
             </Link>
             <div className="footer-responsive-credit-icons">

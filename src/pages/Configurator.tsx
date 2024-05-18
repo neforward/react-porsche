@@ -397,55 +397,6 @@ const Configurator = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="optional-options">
-                    <h3>Additional options</h3>
-                    <div className="option">
-                      <input type="checkbox" />
-                      <h4>
-                        Sports tires with increased wear resistance + 5,000 $
-                      </h4>
-                    </div>
-                    <div className="option">
-                      <input type="checkbox" />
-                      <h4>External glossy black kit + 0 $</h4>
-                    </div>
-                    <div className="option">
-                      <input type="checkbox" />
-                      <h4>
-                        Lotus Active Steering Kit (Active Rear Wheel Steering
-                        and Roll System) + 0 $
-                      </h4>
-                    </div>
-                    <div className="option">
-                      <input type="checkbox" />
-                      <h4>Active aerodynamic kit Lotus + 0 $</h4>
-                    </div>
-                    <div className="option">
-                      <input type="checkbox" />
-                      <h4>
-                        Smart panoramic PDLC canopy (10 light transmission
-                        modes) + 0 $
-                      </h4>
-                    </div>
-                    <div className="option">
-                      <input type="checkbox" />
-                      <h4>
-                        Lotus Intelligent Driving (Adaptive Cruise and Full
-                        Warning System) + 0 $
-                      </h4>
-                    </div>
-                    <div className="option">
-                      <input type="checkbox" />
-                      <h4>
-                        Lotus Intelligent Driving (Adaptive Cruise and Full
-                        Warning System) + 0 $
-                      </h4>
-                    </div>
-                    <div className="option">
-                      <input type="checkbox" />
-                      <h4>Quadruple saloon + 30,000 $</h4>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div className="main-sum">
